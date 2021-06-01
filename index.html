@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title></title>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a7eb62e398.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<header>
+			<div class="banner-header"></div>
+			<div class="body-header">
+				<div class="logo">
+					<img src="assets/images/logo-empresa.png">
+				</div><!--body-header-->
+
+				<div class="search-bar">
+					<input type="search" placeholder="O que voce procura hoje?">
+					<div class="icon-search"><i class="fas fa-search"></i></div>
+				</div><!--search-bar-->
+
+				<div class="links-header">
+					<ul>
+						<li><span>Ajuda</span></li>
+						<li><span>Pedidos</span></li>
+						<li><i class="fas fa-sort-down"></i><span>Minha Conta</span></li>
+						<li><i class="fas fa-sort-down"></i>
+						<span>Sacola</span><i class="fas fa-shopping-bag"></i></li>
+					</ul>
+					</div><!--links-header-->
+			</div><!--body-header-->
+		</header>
+
+		<main>
+		<div class="sub-header">
+
+				<input type="checkbox" id="mob-menu">
+				<label for="mob-menu" class="active-menu">
+					<i class="fas fa-bars"></i>
+				</label>
+		
+				<ul>
+					<li><i class="fas fa-home"></i></li>
+					<li>Snacks</li>
+					<li>Mercearia</li>
+					<li>Marca Própria</li>
+					<li>Matinal</li>
+					<li>Suplementos</li>
+				</ul>
+			</div><!--sub-header-->
+			
+			<div class="way-link">
+				<a href="">Home<i class="fas fa-chevron-right"></i></a> 
+				<a href="">Mercearia<i class="fas fa-chevron-right"></i></a>
+				<span>Dose organic Cactus 300ml pressed juice</span>
+			</div><!--way-link-->
+
+		<div class="product-section">
+
+			<div class="image-wrapper">
+				<div class="image-slot">
+					<img src="assets/images/produto.png">
+				</div>
+				<div class="window-container">
+					<div class="window-img"></div>
+					<div class="window-img"></div>
+				</div><!--window-container-->
+			</div><!--img-wrapper-->
+
+			<div class="information-section">
+				<p class="produCategory">Mercearia</p>
+				<h2 class="title-information">Dose Organic Cactus</h2>
+
+				<div class="Information-container">
+					<p class="info"><strong>Seção:</strong> Snacks</p>
+					<p class="info"><strong>Referencia:</strong> 2345</p>
+					<p class="info"><strong>Disponibilidade:</strong> Em estoque</p>
+					<div class="addInformation">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et ipsum id nisl semper pharetra quis non felis. Sed eget nibh ex. Etiam blandit leo nec fermentum rutrum. Maecenas dapibus purus et ante ultricies, sit amet sodales risus dictum. Curabitur id posuere urna, non bibendum arcu. Donec ornare erat et vestibulum porttitor. Duis sagittis sapien est, eu eleifend nibh cursus nec. Proin feugiat dapibus pulvinar. Proin eu nisl et nisl auctor hendrerit et vel dolor.</p>
+						<a href="#"><i class="fas fa-heart"></i>Adicionar a lista de desejo</a>
+					</div><!--description-->
+				</div><!--description-container-->
+
+				<div class="BuyInformations">
+					<div class="col1">
+						<div class="price">
+								<p class="origin"> <s>De R$ 29,90 por</s></p>
+								<p class ="actual">R$ 27,90</p>
+						</div><!--tamanhos-->
+						<div class="tamanhos">
+							<p>Tamanhos</p>
+								<input type="button" class="inputamanho" onclick="changeTamanho(0)" value="155g">
+								<input type="button" class="inputamanho" onclick="changeTamanho(1)" value="200g">
+								<input type="button" class="inputamanho" onclick="changeTamanho(2)" value="300g">
+								<input type="button" class="inputamanho" onclick="changeTamanho(3)" value="400g">
+								<input type="button" class="inputamanho" onclick="changeTamanho(4)" value="500g">
+						</div><!--tamanhos-->
+					</div><!--col1-->
+					
+					<div class="col2">
+						<div class="button-count">
+							<input type="button" class="decrease" value="-" onclick="less()">
+							<input type="button" class="prodNumber" value="">
+							<input type="button" class="increase" value="+" onclick="more()">
+						</div><!--contProduct-->
+						<input type="button" value="COMPRAR" class="confirmar">
+					</div><!--col2-->
+			</div><!--BuyInformations-->
+
+				<div class="options">
+						<span>Outros sabores:</span>
+						<div class="slot"></div>
+						<div class="slot"></div>
+						<div class="slot"></div>
+				</div><!--options-->
+
+				<div class="shipping">
+					<p><i class="fas fa-truck-moving"></i>Calcular frete</p>
+					<form>
+						<input type="text" placeholder="CEP" class="shipp-input">
+						<input type="button" value="Calcular"> 
+					</form>
+				</div><!--shipping-->
+
+				<div class="share">
+					<p>Compartilhe:</p>
+					<div class="slot">
+						<img src="assets/images/face-logo.png">
+					</div>
+					<div class="slot">
+						<img src="assets/images/twitter-logo.png">
+					</div>
+					<div class="slot">
+						<img src="assets/images/google-logo.png">
+					</div>
+					<div class="slot">
+						<img src="assets/images/pint-logo.png">
+					</div>
+					<div class="slot">
+						<img src="assets/images/email-logo.png">
+					</div>
+				</div><!--share-->
+			</div><!--information-section-->
+		</div><!--product-section-->
+
+		<div class="description">
+			<h2 class="title-description"><i class="fas fa-file-alt"></i>Descrição</h1>
+				
+			<div class="categor">
+				<h3>Categorias</h3>
+				<a hrefs="">Mercearia</a>
+				<a hrefs="">Marca Própria</a>
+				<a hrefs="">+Saúde $$</a>
+			</div><!--categor-->
+
+			<div class="brand">
+				<h3>Marcas</h3>
+				<p>Dose Organic</p>
+			</div><!--brands-->
+
+			<div class="discover">
+				<h3>Descubra mais sobre:</h3>
+				<p>Nunc pulvinar leo ipsum, vitae pretium arcu scelerisque vitae. Nullam est massa, porta vitae congue vitae, aliquet in lacus. Maecenas a ultricies sapien. Quisque ac lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,Nunc pulvinar leo ipsum, vitae pretium arcu scelerisque vitae. Nullam est massa, porta vitae congue vitae, aliquet in lacus. Maecenas a ultricies sapien. Quisque ac lacus scelerisque, hendrerit risus eget.d condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,volutpat urna. Sed condimentum</p>
+			</div><!--discover-->
+
+			<div class="tips">
+				<h3>Dicas</h3>
+				<p>lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere</p>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+				<li>In fermentum urna at odio placerat iaculis. Aenean viverra orci augue, vitae luctus metus luctus et. In facilisis a metus eu pulvinar. Nullam sollicitudin scelerisque justo.</li>
+				<li>Cras in augue vel tellus efficitur lacinia a suscipit lorem. Donec dapibus, urna sit amet vulputate porttitor, diam nibh feugiat lacus, in venenatis mi libero in massa</li>
+			</ul>
+			</div><!--tips-->
+
+		</div><!--description-->
+
+		<div class="similar">
+			<h1>Clientes tambem compram</h1>
+			<div class="similar-container">
+
+				<div class="card">
+					<div class="img-card">
+						<img src="assets/images/prod1.png">
+					</div><!--img-card-->
+					<div class="title-card">
+						<p class="Pcategoria">Hotifruti</p>
+						<p>lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus</p>
+					</div><!--title-card-->
+					<div class="price-card">
+						<p class="actual">R$ 27,90</p>
+						<p>3x de <strong>R$ 9,30</strong></p>
+						<p class="Pshipping">Frete gratis</p>
+					</div><!--price-card-->
+					<div class="info-card">
+						<p>in faucibus orci luctus et ultrices posuere,volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,Nunc pulvinar leo ipsum</p>
+					</div><!--info-card-->
+				</div><!--card-->
+
+				<div class="card">
+					<div class="img-card">
+						<img src="assets/images/prod2.png">
+					</div><!--img-card-->
+					<div class="title-card">
+						<p class="Pcategoria">Padaria</p>
+						<p>lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus</p>
+					</div><!--title-card-->
+					<div class="price-card">
+						<p class="actual">R$ 27,90</p>
+						<p>3x de <strong>R$ 9,30</strong></p>
+						<p class="Pshipping">Frete gratis</p>
+					</div><!--price-card-->
+					<div class="button-card">
+					<input type="button" value="ADICIONAR A SACOLA">
+					<p>ver mais detalhes <i class="fas fa-chevron-right"></i></p>
+					</div><!--info-card-->
+				</div><!--card-->
+
+				<div class="card">
+					<div class="img-card discount">
+						<img src="assets/images/prod3.png">
+					</div><!--img-card-->
+					<div class="title-card">
+						<p class="Pcategoria">Matinal</p>
+						<p>lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus</p>
+					</div><!--title-card-->
+					<div class="price-card">
+						<p class="actual"><span>R$ 29,90</span>R$ 27,90</p>
+						<p>3x de <strong>R$ 9,30</strong></p>
+						<p class="Pshipping">Frete gratis</p>
+					</div><!--price-card-->
+					<div class="info-card">
+						<p>in faucibus orci luctus et ultrices posuere,volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,Nunc pulvinar leo ipsum</p>
+					</div><!--info-card-->
+				</div><!--card-->
+
+				<div class="card">
+					<div class="img-card">
+						<img src="assets/images/prod4.png">
+					</div><!--img-card-->
+					<div class="title-card">
+						<p class="Pcategoria">Marca própria</p>
+						<p>lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus</p>
+					</div><!--title-card-->
+					<div class="price-card">
+						<p class="actual">R$ 27,90</p>
+						<p>3x de <strong>R$ 9,30</strong></p>
+						<p class="Pshipping">Frete gratis</p>
+					</div><!--price-card-->
+					<div class="info-card">
+						<p>in faucibus orci luctus et ultrices posuere,volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,Nunc pulvinar leo ipsum</p>
+					</div><!--info-card-->
+				</div><!--card-->
+
+				<div class="card">
+					<div class="img-card">
+						<img src="assets/images/prod5.png">
+					</div>
+					<div class="title-card">
+						<p class="Pcategoria">Snacks</p>
+						<p>lacus scelerisque, hendrerit risus eget, volutpat urna. Sed condimentum, risus eget maximus</p>
+					</div><!--title-card-->
+					<div class="price-card">
+						<p class="actual">R$ 27,90</p>
+						<p>3x de <strong>$9,30</strong></p>
+						<p class="Pshipping">Frete gratis</p>
+					</div><!--price-card-->
+					<div class="info-card">
+						<p>in faucibus orci luctus et ultrices posuere,volutpat urna. Sed condimentum, risus eget maximus iaculis, lorem dui interdum lorem, sit amet ultricies tellus dui quis sem.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere,Nunc pulvinar leo ipsum</p>
+					</div><!--info-card-->
+				</div><!--card-->
+
+			</div><!--similar-container-->
+		</div><!--similar-->
+		</main>
+
+		<footer>
+			<div class="footer-container">
+				<div class="container-1F">
+
+					<div class="first-links">
+						<h3>Sobre meu lado natureba</h3>
+						<ul>
+							<li><span>Quem somos</span></li>
+							<li><span>Peguntas frequentes</span></li>
+							<li><span>Termos de uso</span></li>
+							<li><span>Politica de privacidade</span></li>
+							<li><span>Politicas de frete</span></li>
+							<li><span>Seja franqueado</span></li>
+						</ul>
+					</div><!--first-links-->
+
+					<div class="second-links">
+						<h3>Nossos produtos</h3>
+						<ul>
+							<li><span>Hortifruti</span></li>
+							<li><span>Snacks</span></li>
+							<li><span>Marca Própria</span></li>
+							<li><span>Mel e derivados</span></li>
+							<li><span>Congelados</span></li>
+							<li><span>Bebidas</span></li>
+							<li><span>Padaria</span></li>
+							<li><span>Granel</span></li>
+							<li><span>Mercearia e Massas</span></li>
+							<li><span>Café da manha</span></li>
+							<li><span>Cosmeticos e body care</span></li>
+							<li><span>Produtos de limpeza</span></li>
+							<li><span>Bazar</span></li>
+						</ul>
+					</div><!--second-links-->
+
+					<div class="newspaper">
+						<form>
+							<h3>Newsletter</h3>
+							<p>Cadastre-se para receber novidades e promoçoes exclusivas!</p>
+							<input type="text" placeholder="Nome" class="newName">
+							<input type="email"placeholder="Email" class="newEmail">
+							<input type="button" value="Enviar">
+						</form>
+					</div><!--newspaper-->
+
+				</div><!--container-1F-->	
+
+
+				<div class="container-2F">
+
+					<div class="Payments">
+						<p>Formas de pagamento</p>
+						<div class="pay-card visa">
+							<img src="assets/images/visa.logo.png">
+						</div><!--img-pay-->
+						<div class="pay-card master">
+							<img src="assets/images/master.logo.png">
+						</div><!--img-pay-->
+						<div class="pay-card hyper">
+							<img src="assets/images/hyper.logo.jpg">
+						</div><!--img-pay-->
+						<div class="pay-card dinner">
+							<img src="assets/images/diner.logo.png">
+						</div><!--img-pay-->
+						<div class="pay-card epxress">
+							<img src="assets/images/express.logo.png">
+						</div><!--img-pay-->
+						<div class="pay-card elo">
+							<img src="assets/images/elo.logo.png">
+						</div><!--img-pay-->
+						<div class="pay-card boleto">
+							<img src="assets/images/boleto.logo.png">
+						</div><!--img-pay-->
+					</div><!--payments-->
+
+					<div class="security">
+						<p>Selos de segurança</p>
+						<div class="logo-security"></div>
+					</div><!--security-->
+
+					<div class="social-medias">
+						<a href=""><i class="fab fa-facebook"></i></a>
+						<a href=""><i class="fab fa-instagram"></i></a>
+					</div><!--social-medias-->
+
+				</div><!--container-2F-->
+
+
+				<div class="last-banner">
+					<div class="logo-last-banner">
+						<img src="assets/images/logo-empresa.png">
+					</div><!--logo-->
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a porttitor nibh. Integer euismod vitae libero id varius. Suspendisse maximus metus nec interdum finibus. Phasellus dignissim leo lacus, tincidunt fringilla enim venenatis vitae. </p>
+				</div><!--last-banner-->
+
+			</div><!--footer-container-->
+			<p class="reserved">Loja Abc 2021.Todos os direitos reservados</p>
+
+		</footer>
+
+	<script type="text/javascript" src="assets/js/scripts.js"></script>	
+	</body>
+</html>
